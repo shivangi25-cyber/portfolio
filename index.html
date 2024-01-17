@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivangi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/443b6dd95b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CODER.DEVELOPER.LEARNER</p>
+                <h1>Hello <span>Duniya!</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                <img src="portfolio1.png" alt="">
+               </div>
+               <div class="about-col-2">
+                   <h1 class="subtitle">About me</h1>
+                   <p>Hey everyone! I'm Shivangi and currently I'm pursuing Instrumentation and Control Engineering from NIT Jalandhar. I have a good knowledge of programming languages like Java, C ,Python and also DSA. I love to work on AI/ML projects.Feel free to connect and lets learn together!!</p>
+               <div class="tab-titles">
+                <p class="tab-links active-links" oneclick="opentab('skills')">Skills</p>
+                <p class="tab-links" oneclick="opentab('experience')">Experience</p>
+                <p class="tab-links" oneclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Languages</span><br>Java,Python,<br>C,HTML,CSS</li>
+                    <li><span>UI/UX</span><br>Figma,Canva</li>
+                    <li><span>AI/ML</span><br></li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>IIT Bombay techfest 2023<br></span><br></li>
+                    <li><span>SIH 2023</span><br></li>
+                    <li><span>SPICE HACKATHON 2023</span><br></li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>COLLEGE<br></span><br>Dr.B.R.Ambedkar National Institute of Technology, Jalandhar<br>Btech-ICE</li>
+                    <li><span>SCHOOL</span><br>Little Flower School, Rapti Nagar<br>94% in 12th<br>93% in 10th</li>
+                </ul>
+               </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <h2>Web Design</h2>
+                 <p></p>
+                 <a href="#">learn more</a>
+            </div>
+            <div class="services-list">
+                <h2>AI/ML</h2>
+                 <p></p>
+                 <a href="#">learn more</a>
+            </div>
+            <div class="services-list">
+                <h2>CP</h2>
+                 <p></p>
+                 <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class=""></i>shivangisrivastava347@gmail.com</p>
+                    <p></p>
+                    <div class="social-icons">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
